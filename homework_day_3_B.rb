@@ -60,6 +60,7 @@ users["Jonathan"][:lottery_numbers] #answer 3
 users["Avril"][:pets][0][:species] # answer 4
 
 p users["Erik"][:lottery_numbers].min #answer 5
+
 avril_array = users["Avril"][:lottery_numbers]
 
  def even_num(array)
@@ -75,6 +76,8 @@ avril_array = users["Avril"][:lottery_numbers]
 users["Erik"][:lottery_numbers] << 7 #answer 7
 users["Erik"][:home_town] = "Edinburgh" #answer 8
 
-users["Erik"][:pets].push("fluffy") #answer 9
+users["Erik"][:pets].push(:name => "fluffy", :species => "dog") #answer 9
+
+p users["Erik"]
 
 users["Jack"] = "Friend" #answer 10
